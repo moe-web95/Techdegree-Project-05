@@ -1,2 +1,33 @@
-*{box-sizing: border-box}
-
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width: 1024;
+}
+body{
+     background-color: rgba(23,135,90,.5);
+     
+}
+#search{
+    display: block;
+    margin:  20px auto;
+    padding: 15px;
+    background-color: white;
+    width: 50%;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 230, 130);
+}
+#search:focus{
+    background-color: blanchedalmond;
+    border-color: black;
+}
+.gallery{
+    max-width:900px;
+    height:100vh;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-rows: 1fr;
+    grid-gap:20px;
+    padding:20px;
+    margin: 20px auto;
+}
