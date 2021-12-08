@@ -23,10 +23,10 @@ body{
 }
 .gallery{
     max-width:900px;
-    height:100vh;
+   
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    grid-template-rows: repeat(3,1fr);
+ 
     grid-gap:20px;
     padding:15x;
     margin: 10px auto;
