@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    max-width: 1024;
 }
 body{
      background-color: rgba(23,135,90,.5);
@@ -22,10 +21,19 @@ body{
     border-color: black;
 }
 .gallery{
-    max-width:900px;
+    max-width: 1000px;
     display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fill,200px);
     grid-gap:20px;
-    padding:15x;
-    margin: 10px auto;
+    padding:15px;
+    margin: 0 auto;
+    justify-content: center;
+}
+img{
+    transition: transform .5s;
+    border:3px solid black;
+}
+img:hover{
+    transform:scale(1.1);
+    transition:transform 2s ease-in-out .5s;
 }
